@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let str = 'git://www.it.kaikeba.com';
+        // alert(str.startsWith('http://'));
+        if(str.startsWith("http://")){
+            alert('普通网址');
+        }else if(str.startsWith("https://")){
+            alert('加密网址');
+        }else if(str.startsWith('git://')){
+            alert('git地址')
+        }else if(str.startsWith('svn://')){
+            alert('svn地址')
+        }else{
+            alert('其他')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

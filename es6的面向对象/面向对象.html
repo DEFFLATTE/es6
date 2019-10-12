@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // function User(name,pass) {
+        //     this.name = name;
+        //     this.pass=pass;
+        // }
+        // User.prototype.showName=function () {
+        //     alert(this.name)
+        // }
+        // User.prototype.showPass=function () {
+        //     alert(this.pass)
+        // }
+        class User{
+            constructor(name,pass){
+                this.name=name;
+                this.pass=pass;
+            }
+            showName(){
+                alert(this.name);
+            }
+            showPass(){
+                alert(this.pass);
+            }
+        }
+
+        var ul = new User('blue','123456');
+        ul.showName();
+        ul.showPass();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
