@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        以上代码中遇到了一个使用闭包和循环时常见的问题，也就是说函数绑定之后，闭包抓取的变量被更新了。这意味着，每一个绑定的函数处理程序都会一直显示i最后的值；-->
+        window.onload=function () {
+            var aBtn = document.getElementsByTagName('input');
+
+            for(var i=0;i<aBtn.length;i++){
+                (function (i) {
+                    aBtn[i].onclick=function () {
+                        alert(i);
+                    };
+                })(i)
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮2">
+    <input type="button" value="按钮3">
+</body>
+</html>
