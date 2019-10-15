@@ -11,8 +11,15 @@
 
             alert('b');
         }
+        function show_1(){
+            alert('a')
+        }
+        function show_2(){
+            alert('b')
+        }
         let genObj = show();
-        genObj.next();
+        genObj.next();//show_1
+        genObj.next();//show_2
     </script>
 </head>
 <body>

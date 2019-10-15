@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    window.onload = function () {
+        var oBtn = document.getElementsByTagName('input');
+        for(var i=0;i<oBtn.length;i++){
+            (function (i) {
+                oBtn[i].onclick = function () {
+                    alert(i)
+                }
+            })(i)
+
+        }
+    }
+    </script>
+</head>
+<body>
+<input type="button" value="1">
+<input type="button" value="2">
+<input type="button" value="3">
+</body>
+</html>

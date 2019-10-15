@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="runner.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        runner(function *() {
+            let data1 = yield $.ajax({url:'data/1.txt',dataType:'json'});
+            let data2 = yield $.ajax({url:'data/2.txt',dataType:'json'});
+            let data3 = yield $.ajax({url:'data/3.txt',dataType:'json'});
+
+            console.log(data1,data2,data3)
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
